@@ -2,11 +2,10 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: myweb-pod
-  labels:
-    country: in
-    name: myweb
-    dc: "2"
+  labels: 
+    env: testing
+    region: IN
+  name: myweb-pod2
 spec: 
   containers: 
     - 
