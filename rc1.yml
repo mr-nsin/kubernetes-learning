@@ -4,13 +4,13 @@ kind: ReplicationController
 metadata: 
   name: myweb-rc
 spec: 
-  replicas: 3
+  replicas: 7
   selector: 
-    app: production
+    env: production
   template: 
     metadata: 
       labels: 
-        app: production
+        env: production
       name: myweb-pod
     spec: 
       containers: 
