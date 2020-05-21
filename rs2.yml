@@ -1,0 +1,20 @@
+--- 
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: myweb-rs
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      env: production
+  template: 
+    metadata: 
+      labels: 
+        env: production
+      name: myweb-pod
+    spec: 
+      containers: 
+      - name: myweb-con
+        image: nitinsinghal95/apache-webserver-php:v1
+        
