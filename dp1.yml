@@ -1,8 +1,8 @@
 --- 
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata: 
-  name: myweb-rs
+  name: myweb-deploy
 spec: 
   replicas: 3
   selector:
